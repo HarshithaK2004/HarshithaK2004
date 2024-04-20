@@ -1,0 +1,139 @@
+import java.util.Scanner;
+
+
+
+public class CalendarEvent {
+
+    private String eventTitle;
+
+    private String eventDate;
+
+    private String eventLocation;
+
+
+
+    // Setter methods
+
+    public void setEventTitle(String eventTitle) {
+
+        this.eventTitle = eventTitle;
+
+    }
+
+
+
+    public void setEventDate(String eventDate) {
+
+        this.eventDate = eventDate;
+
+    }
+
+
+
+    public void setEventLocation(String eventLocation) {
+
+        this.eventLocation = eventLocation;
+
+    }
+
+
+
+    // Getter methods
+
+    public String getEventTitle() {
+
+        return eventTitle;
+
+    }
+
+
+
+    public String getEventDate() {
+
+        return eventDate;
+
+    }
+
+
+
+    public String getEventLocation() {
+
+        return eventLocation;
+
+    }
+
+
+
+    // Method to display event details
+
+    public void displayEventDetails() {
+
+        System.out.println("Event Title: " + eventTitle);
+
+        System.out.println("Event Date: " + eventDate);
+
+        System.out.println("Event Location: " + eventLocation);
+
+    }
+
+
+
+    public static void main(String[] args) {
+
+        CalendarEvent event = new CalendarEvent();
+
+
+
+        Scanner scanner = new Scanner(System.in);
+
+
+
+        System.out.print("Enter event title: ");
+
+        event.setEventTitle(scanner.nextLine());
+
+
+
+        System.out.print("Enter event date: ");
+
+        event.setEventDate(scanner.nextLine());
+
+
+
+        System.out.print("Enter event location: ");
+
+        event.setEventLocation(scanner.nextLine());
+
+
+
+        System.out.println("\nEvent details:");
+
+        event.displayEventDetails();
+
+
+
+        scanner.close();
+
+    }
+
+}
+
+Output:-
+
+Enter event title: marriage 
+
+Enter event date: 24/4/2024
+
+Enter event location: Bengaluru 
+
+
+
+Event details:
+
+Event Title: marriage 
+
+Event Date: 24/4/2024
+
+Event Location: Bengaluru
+
+
